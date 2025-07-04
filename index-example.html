@@ -92,17 +92,54 @@
         <p class="masthead-subheading mb-0" style="color: #f6ce3d">
           October 17 & 18, 2025
         </p>
-        <p>
-          Join students from the 4 states area as they compete in a 24-hour
-          hackathon! Brought to you by the MSSU CRIC Club.
-        </p>
         <div class="container">
           <div
             class="timer-container d-flex flex-column align-items-center justify-content-center"
           >
-            <div id="timer" class="timer-display mb-4">00:00</div>
+            <div class="card-group">
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="days" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Days</span>
+                </div>
+              </div>
+
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="hours" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Hours</span>
+                </div>
+              </div>
+
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="minutes" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Minutes</span>
+                </div>
+              </div>
+
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="seconds" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Seconds</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <h4 style="padding-top: 1rem">
+          Join students from the 4 states area as they compete in a 24-hour
+          hackathon! Brought to you by the MSSU CRIC Club.
+        </h4>
       </div>
     </header>
     <!-- About Section-->
@@ -154,7 +191,9 @@
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="far fa-calendar"></i></div>
+          <div class="divider-custom-icon">
+            <i class="far fa-alarm-clock"></i>
+          </div>
           <div class="divider-custom-line"></div>
         </div>
         <!-- Schedule Section Content-->
