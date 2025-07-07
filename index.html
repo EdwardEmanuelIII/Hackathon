@@ -1,49 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
-<body>
-    <!-- Title at the top -->
-    <!-- We will also include the logo when it is done -->
-    <div class="title">
-        <h1>LIONTECH</h1>
-    </div>
-    <p>Fall 2025 Hackathon</p>
-    <h4>October 17 & 18</h4>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>MSSU Hackathon</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/28a5d4de92.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">MSSU Hackathon</a>
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#schedule"
+                >Schedule</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#sponsors"
+                >Sponsors</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
 
-    <button>Sign up now!</button>
-    <div class="description">
-        <p>
-            <b>Liontech</b> is a 24-hour student hackathon hosted by the CRIC club at Missouri Southern State University.
-            This event is opened to all college students for free! Students of any major and skill level are welcome.
-            This is a great opportunity for students to improve their skills by working on a collaborative project.
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img
+          class="masthead-avatar mb-5"
+          src="assets/img/Lion-right-facing.png"
+          alt="..."
+        />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">LionTech</h1>
+
+        <!-- Icon Divider-->
+
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading mb-0" style="color: #f6ce3d">
+          October 17 & 18, 2025
         </p>
-        <p>
-            Teams will be given
-            a theme at the start of the challenge and must develop a fully functional website or app
-            with the theme integrated into its design. They will present their project in front of a panel
-            of judges and have the chance to win prizes.
-        </p>
-        <button>Sign up now!</button>
+        <div class="container">
+          <div
+            class="timer-container d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="card-group">
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="days" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Days</span>
+                </div>
+              </div>
+
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="hours" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Hours</span>
+                </div>
+              </div>
+
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="minutes" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Minutes</span>
+                </div>
+              </div>
+
+              <div class="card border-primary timer-card">
+                <div class="card-top">
+                  <div id="seconds" class="timer-number">-</div>
+                </div>
+                <div class="card-body bg-secondary">
+                  <span class="timer-label">Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 style="padding-top: 1rem">
+          Join students from the 4 states area as they compete in a 24-hour
+          hackathon! Brought to you by the MSSU CRIC Club.
+        </h4>
+      </div>
+    </header>
+    <!-- About Section-->
+    <section class="page-section portfolio" id="about">
+      <div class="container">
+        <!-- About Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          About
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ms-auto">
+            <p class="lead">
+              LionTech is a 24-hour student hackathon hosted by the CRIC club at
+              Missouri Southern State University. This event is opened to all
+              college students for free! Students of any major and skill level
+              are welcome. This is a great opportunity for students to improve
+              their skills by working on a collaborative project.
+            </p>
+          </div>
+          <div class="col-lg-4 me-auto">
+            <p class="lead">
+              Teams will be given a theme at the start of the challenge and must
+              develop a fully functional website or app with the theme
+              integrated into its design. They will present their project in
+              front of a panel of judges and have the chance to win prizes.
+            </p>
+          </div>
+        </div>
+        <!-- Portfolio Grid Items-->
+      </div>
+    </section>
+    <!-- Schedule Section-->
+    <section class="page-section bg-primary text-white mb-0" id="schedule">
+      <div class="container">
+        <!-- Schedule Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">
+          Schedule
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="far fa-alarm-clock"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Schedule Section Content-->
+        <div class="text-center">More information coming soon...</div>
+        <!-- Uncomment this section when we want to reveal the schedule -->
+        <div class="row">
+          <div class="col-lg-4 ms-auto">
+            <p class="lead">Friday: Registration and Team Formation</p>
+          </div>
+          <div class="col-lg-4 me-auto">
+            <p class="lead">Saturday: Hacking Begins</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section-->
+    <section class="page-section" id="faq">
+      <div class="container">
+        <!-- FAQ Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Frequently Asked Questions
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-message-question"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- FAQ Section Form-->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    What is a Hackathon?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    A hackathon is an event where people work together as a team
+                    to create a project such as an app or website in a short
+                    timeframe, normally one or two days.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    What do I need to bring?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You will need to bring a laptop, charger, bedding, and some
+                    creavity! We'll provide everything else, such as food and
+                    drinks.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Does the event cost anything?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    No! this event is absolutely free to you!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sponsors Section-->
+    <section
+      class="page-section portfolio bg-primary text-white mb-0"
+      id="sponsors"
+    >
+      <div class="container">
+        <!-- Sponsors Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">
+          Sponsors
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-buildings"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Sponsors Section Content-->
+        <div class="row justify-content-center">
+          <!-- Portfolio Item 1-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal1"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/sponsors/fontawesome.png"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Portfolio Item 2-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal2"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/sponsors/smb-bank.png"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Portfolio Item 3-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal3"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/sponsors/stronghold-data-logo.jpg"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">
+              3950 E Newman Rd
+              <br />
+              Joplin, MO 64801
+            </p>
+          </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.instagram.com/mssucric/"
+              ><i class="fab fa-fw fa-instagram"></i
+            ></a>
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">Interested in Sponsoring?</h4>
+            <p class="lead mb-0">
+              Reach out to
+              <a href="mailto:sethu-s@mssu.edu">sethu-s@mssu.edu</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; MSSU CRIC Club</small>
+      </div>
     </div>
-
-    <!-- We will add more details later -->
-    <div class="schedule">
-        <h2>Schedule</h2>
-        <p>
-        More information coming out soon...
-        </p>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      aria-labelledby="portfolioModal1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Fontawesome
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <a href="https://fontawesome.com/" target="_blank"
+                    ><img
+                      class="img-fluid rounded mb-5"
+                      src="assets/img/sponsors/fontawesome.png"
+                      alt="..."
+                    />
+                  </a>
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Font Awesome is the internet's icon library and toolkit used
+                    by millions of designers, developers, and content creators.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <h3>FAQ</h3>
-
-    <!-- We will add more info later -->
-
-    <!-- We will have a list of sponsors here -->
-     
-    <!-- We could try to put this in the footer -->
-    <h2>Interested in sponsoring our event?</h2>
-    <p>
-    Reach out to <a href="mailto:sethu-s@mssu.edu">sethu-s@mssu.edu</a>
-    </p>
-</body>
+    <!-- Portfolio Modal 2-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      aria-labelledby="portfolioModal2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    SMB Bank
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/sponsors/smb-bank.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4"></p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      aria-labelledby="portfolioModal3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Stronghold Data
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/sponsors/stronghold-data-logo.jpg"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4"></p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      aria-labelledby="portfolioModal4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Controller
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/game.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal5"
+      tabindex="-1"
+      aria-labelledby="portfolioModal5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Locked Safe
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/safe.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal6"
+      tabindex="-1"
+      aria-labelledby="portfolioModal6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Submarine
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/submarine.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
